@@ -1,7 +1,7 @@
 ##grflangid 0x3A
 
 # GRF name and description
-STR_GRF_NAME                                        :한국 도시 세트 오브젝트 1.0.0
+STR_GRF_NAME                                        :한국 도시 세트 오브젝트 1.1.0
 STR_GRF_DESC                                        :오브젝트로 된 한국도시세트의 도시건물들과, 고유의 랜드마크와 아파트 오브젝트를 추가하는 NewGRF입니다. {}{}{BLACK}라이센스: {SILVER}GNU GPL v3
 
 STR_GRF_URL                                         :https://github.com/SerpensNebula/Korean-Town-Set-As-Objects
@@ -67,6 +67,7 @@ STR_OBJECT_MID_APT_1990_NAME						:고층 아파트 - 1990년대
 STR_OBJECT_MID_APT_2000_PART1_NAME					:고층 아파트 - 2000년대 (파트1)
 STR_OBJECT_MID_APT_2000_PART2_NAME					:고층 아파트 - 2000년대 (파트2)
 STR_OBJECT_MID_APT_2010_NAME						:고층 아파트 - 2010년대
+STR_OBJECT_TALL_APT_2000_NAME						:초고층 주상복합 아파트 - 2000년
 STR_OBJECT_TALL_APT_2015_NAME						:초고층 주상복합 아파트 - 2015년
 
 # Object name

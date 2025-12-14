@@ -1,7 +1,7 @@
 ##grflangid 0x01
 
 # GRF name and description
-STR_GRF_NAME                                      	:Korean Town Set As Objects 1.0.0
+STR_GRF_NAME                                      	:Korean Town Set As Objects 1.1.0
 STR_GRF_DESC                                      	:Korean Town Set As Objects adds object version of town houses of Korean Town Set AND more unique landmarks of South Korea. {}{}{BLACK}License: {SILVER}GNU GPL v3
 
 STR_GRF_URL                                       	:https://github.com/SerpensNebula/Korean-Town-Set-As-Objects
@@ -66,6 +66,7 @@ STR_OBJECT_MID_APT_1990_NAME						:High-rise apartment - 1990s
 STR_OBJECT_MID_APT_2000_PART1_NAME					:High-rise apartment - 2000s (Part 1)
 STR_OBJECT_MID_APT_2000_PART2_NAME					:High-rise apartment - 2000s (Part 2)
 STR_OBJECT_MID_APT_2010_NAME						:High-rise apartment - 2010s
+STR_OBJECT_TALL_APT_2000_NAME						:High-rise apartment Complexes - 2000
 STR_OBJECT_TALL_APT_2015_NAME						:High-rise apartment Complexes - 2015
 
 # Object name

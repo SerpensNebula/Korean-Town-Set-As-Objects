@@ -4,8 +4,8 @@
         name:                               string(STR_GRF_NAME);
         desc:                               string(STR_GRF_DESC);
         url:                                string(STR_GRF_URL);
-        version:                            251129;
-        min_compatible_version:             251120;
+        version:                            251214;
+        min_compatible_version:             251214;
     }
     
 // Templates
@@ -6411,6 +6411,124 @@
                 }
 
     // TALL_APTS
+        // TALL_APT_2000
+            // spritelayout
+                spritelayout layout_building_normal_TALL_APT_2000_A {
+                    ground {
+                        sprite:          set_ground_normal_TALL_APT_2000;
+                    }
+
+                    building {
+                        sprite:          set_building_normal_TALL_APT_2000_A;
+                        recolour_mode:   RECOLOUR_REMAP;
+                        palette:         PALETTE_USE_DEFAULT;
+                    }
+                }
+
+                spriteset (set_building_normal_TALL_APT_2000_A, "./Korean_Town_Set_As_Objects/gfx/TALL_APT_2000.png") {
+                    tmpl_high_building(360, 0)
+                }
+
+                spritelayout layout_building_snow_TALL_APT_2000_A {
+                    ground {
+                        sprite:          set_ground_snow_TALL_APT_2000;
+                    }
+
+                    building {
+                        sprite:          set_building_snow_TALL_APT_2000_A;
+                        recolour_mode:   RECOLOUR_REMAP;
+                        palette:         PALETTE_USE_DEFAULT;
+                    }
+                }
+
+                spriteset (set_building_snow_TALL_APT_2000_A, "./Korean_Town_Set_As_Objects/gfx/TALL_APT_2000.png") {
+                    tmpl_high_building(720, 0)
+                }
+
+                spritelayout layout_building_normal_TALL_APT_2000_B {
+                    ground {
+                        sprite:          set_ground_normal_TALL_APT_2000;
+                    }
+
+                    building {
+                        sprite:          set_building_normal_TALL_APT_2000_B;
+                        recolour_mode:   RECOLOUR_REMAP;
+                        palette:         PALETTE_USE_DEFAULT;
+                    }
+                }
+
+                spriteset (set_building_normal_TALL_APT_2000_B, "./Korean_Town_Set_As_Objects/gfx/TALL_APT_2000.png") {
+                    tmpl_high_building(360, 300)
+                }
+
+                spritelayout layout_building_snow_TALL_APT_2000_B {
+                    ground {
+                        sprite:          set_ground_snow_TALL_APT_2000;
+                    }
+
+                    building {
+                        sprite:          set_building_snow_TALL_APT_2000_B;
+                        recolour_mode:   RECOLOUR_REMAP;
+                        palette:         PALETTE_USE_DEFAULT;
+                    }
+                }
+
+                spriteset (set_building_snow_TALL_APT_2000_B, "./Korean_Town_Set_As_Objects/gfx/TALL_APT_2000.png") {
+                    tmpl_high_building(720, 300)
+                }
+
+            // Ground
+
+                spriteset(set_ground_normal_TALL_APT_2000, "./Korean_Town_Set_As_Objects/gfx/TALL_APT_2000.png") {
+                    tmpl_high_building(600, 0)
+                }
+
+                spriteset(set_ground_snow_TALL_APT_2000, "./Korean_Town_Set_As_Objects/gfx/TALL_APT_2000.png") {
+                    tmpl_high_building(840, 0)
+                }
+
+            // Switch
+                switch(FEAT_OBJECTS, SELF, sw_building_TALL_APT_2000_A, terrain_type) {
+                    TILETYPE_NORMAL:                    layout_building_normal_TALL_APT_2000_A;
+                    TILETYPE_SNOW:                      layout_building_snow_TALL_APT_2000_A;            
+                    layout_building_normal_TALL_APT_2000_A;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_TALL_APT_2000_B, terrain_type) {
+                    TILETYPE_NORMAL:                    layout_building_normal_TALL_APT_2000_B;
+                    TILETYPE_SNOW:                      layout_building_snow_TALL_APT_2000_B;            
+                    layout_building_normal_TALL_APT_2000_B;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_view_TALL_APT_2000, view ) {
+                    1: sw_building_TALL_APT_2000_B;
+                    sw_building_TALL_APT_2000_A;
+                }
+
+            // Item Define
+                item(FEAT_OBJECTS, kt_TALL_APT_2000) {
+                    property {
+                        class:                           "KOTA";
+                        classname:                       string(STR_OBJECT_KOTA_NAME);
+                        name:                            string(STR_OBJECT_TALL_APT_2000_NAME);
+                        climates_available:              ALL_CLIMATES;
+                        size:                            [1,1];
+                        build_cost_multiplier:           2;
+                        remove_cost_multiplier:          2;
+                        introduction_date:               date(2000,1,1);
+                        end_of_life_date:                0xFFFFFFFF;
+                        object_flags:                    bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+                        height:                          16;
+                        num_views:                       4;
+                    }
+
+                    graphics {
+                        default:                         sw_view_TALL_APT_2000;
+                        colour:                          random_bits%15+775;
+                        tile_check:                      CB_RESULT_LOCATION_ALLOW;
+                    }
+                }
+
         // TALL_APT_2015
             // Spritelayouts
                 spritelayout layout_building_normal_TALL_APT_2015_A {
@@ -6596,7 +6714,7 @@
                         size:                            [1,1];
                         build_cost_multiplier:           2;
                         remove_cost_multiplier:          2;
-                        introduction_date:               date(2010,1,1);
+                        introduction_date:               date(2015,1,1);
                         end_of_life_date:                0xFFFFFFFF;
                         object_flags:                    bitmask(OBJ_FLAG_ANYTHING_REMOVE);
                         height:                          16;
