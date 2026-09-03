@@ -1,15 +1,15 @@
 ##grflangid 0x3A
 
 # GRF name and description
-STR_GRF_NAME                                        :한국 도시 세트 오브젝트 1.1.0
-STR_GRF_DESC                                        :오브젝트로 된 한국도시세트의 도시건물들과, 고유의 랜드마크와 아파트 오브젝트를 추가하는 NewGRF입니다. {}{}{BLACK}라이센스: {SILVER}GNU GPL v3
+STR_GRF_NAME                                        :한국 도시 세트 오브젝트 1.2.0
+STR_GRF_DESC                                        :오브젝트로 된 한국도시세트의 도시건물과, 한국 랜드마크와 오브젝트를 추가하는 NewGRF입니다. {}{}{BLACK}라이센스: {SILVER}GNU GPL v3
 
 STR_GRF_URL                                         :https://github.com/SerpensNebula/Korean-Town-Set-As-Objects
 
 # Menu name
 STR_OBJECT_MENU_NAME								:　
 
-STR_OBJECT_KOMH_NAME                                :한국도시세트 오브젝트 - 도시건물
+STR_OBJECT_KOMH_NAME                                :한국도시세트 도시건물
 STR_OBJECT_KOKT_NAME                                :    한옥
 STR_OBJECT_KOSH_NAME                                :    단독주택
 STR_OBJECT_KTOV_NAME                                :    빌라
@@ -21,16 +21,16 @@ STR_OBJECT_KOLF_NAME                                :    마천루
 STR_OBJECT_KTOP_NAME                                :    공원
 STR_OBJECT_KOPB_NAME                                :    공공건물
 
-STR_OBJECT_KOAP_NAME                                :한국도시세트 오브젝트 - 아파트
+STR_OBJECT_KOAP_NAME                                :한국도시세트 아파트
 STR_OBJECT_KOLA_NAME                                :    저층 아파트
 STR_OBJECT_KOMA_NAME                                :    고층 아파트
 STR_OBJECT_KOTA_NAME                                :    초고층 주상복합 아파트
-
 
 STR_OBJECT_KOMO_NAME                                :한국도시세트 오브젝트
 STR_OBJECT_KTOO_NAME                                :    오피스
 STR_OBJECT_KTOK_NAME                                :    랜드마크
 STR_OBJECT_KTOA_NAME                                :    아파트
+STR_OBJECT_KTOE_NAME                                :    기타
 
 # Building name
 STR_OBJECT_THATCHED_ROOF_HOUSE_NAME                 :초가집
@@ -71,12 +71,16 @@ STR_OBJECT_TALL_APT_2000_NAME						:초고층 주상복합 아파트 - 2000년
 STR_OBJECT_TALL_APT_2015_NAME						:초고층 주상복합 아파트 - 2015년
 
 # Object name
+STR_OBJECT_SEOUL_CITY_HALL_NAME                     :서울특별시청
+STR_OBJECT_SEOUL_CITY_HALL_DESC                     :준공년도: 1926년, 서울특별시청 개청: 1949년
 STR_OBJECT_31BUILDING_NAME							:31빌딩
 STR_OBJECT_31BUILDING_DESC							:준공년도: 1970년
 STR_OBJECT_HQ_512_NAME								:한국철도공사 서울본부 (철도청 서울역 서부역 청사)
 STR_OBJECT_HQ_512_DESC								:준공년도: 1975년
 STR_OBJECT_N_SEOUL_TOWER_NAME						:N서울타워
 STR_OBJECT_N_SEOUL_TOWER_DESC						:준공년도: 1975년
+STR_OBJECT_NATIONAL_ASSEMBLY_DESC                   :여의도 국회의사당
+STR_OBJECT_NATIONAL_ASSEMBLY_NAME                   :준공년도: 1975년
 STR_OBJECT_63BUILDING_NAME							:63빌딩
 STR_OBJECT_63BUILDING_DESC							:준공년도: 1985년
 STR_OBJECT_GANGNAM_TRADE_TOWER_NAME					:한국종합무역센터 트레이드타워
@@ -87,3 +91,8 @@ STR_OBJECT_LOTTE_WORLD_TOWER_PART2_NAME				:롯데월드타워 (파트2)
 
 STR_OBJECT_APT001_NAME								:마포 성산시영아파트
 STR_OBJECT_APT001_DESC								:준공년도: 1986년
+
+STR_OBJECT_PARKING_LOT_NAME                         :주차장
+STR_OBJECT_TENNIS_COURT_NAME                        :테니스장
+STR_OBJECT_GU_OFFICE_NAME                           :구청 청사
+STR_OBJECT_GU_OFFICE_DESC                           :한국 오브젝트 세트

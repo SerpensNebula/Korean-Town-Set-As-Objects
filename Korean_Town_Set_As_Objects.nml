@@ -4,7 +4,7 @@
         name:                               string(STR_GRF_NAME);
         desc:                               string(STR_GRF_DESC);
         url:                                string(STR_GRF_URL);
-        version:                            251214;
+        version:                            260901;
         min_compatible_version:             251214;
     }
     
@@ -15,25 +15,130 @@
         }
 
     // low_building
-        template tmpl_low_building(x, y) {
-            [x, y, 70, 90, -34, -58]
-        }
+        // low_building
+            template tmpl_low_building_1x2_north(x, y) {
+                [x, y, 110, 110, -38, -62]
+            }
 
-        template tmpl_low_building_2x2_north(x, y) {
-            [x, y, 140, 140, -69, -76]
-        }
+            template tmpl_low_building_1x2_east(x, y) {
+                [x, y, 110, 110, -70, -78]
+            }
 
-        template tmpl_low_building_2x2_east(x, y) {
-            [x, y, 140, 140, -101, -92]
-        }
+            template tmpl_low_building_2x1_north(x, y) {
+                [x, y, 110, 110, -70, -62]
+            }
 
-        template tmpl_low_building_2x2_west(x, y) {
-            [x, y, 140, 140, -37, -92]
-        }
+            template tmpl_low_building_2x1_west(x, y) {
+                [x, y, 110, 110, -38, -78]
+            }
 
-        template tmpl_low_building_2x2_south(x, y) {
-            [x, y, 140, 140, -69, -108]
-        }
+        // low_building_2x2 
+            template tmpl_low_building(x, y) {
+                [x, y, 70, 90, -34, -58]
+            }
+
+            template tmpl_low_building_2x2_north(x, y) {
+                [x, y, 140, 140, -69, -76]
+            }
+
+            template tmpl_low_building_2x2_east(x, y) {
+                [x, y, 140, 140, -101, -92]
+            }
+
+            template tmpl_low_building_2x2_west(x, y) {
+                [x, y, 140, 140, -37,  -92]
+            }
+
+            template tmpl_low_building_2x2_south(x, y) {
+                [x, y, 140, 140, -69, -108]
+            }
+
+        // low_building_3x2
+            template tmpl_low_building_3x2_north(x, y) {
+                [x, y, 180, 180, -105,  -100]
+            }
+
+            template tmpl_low_building_3x2_north_west(x, y) {
+                [x, y, 180, 180, -73,  -116]
+            }
+
+            template tmpl_low_building_3x2_west(x, y) {
+                [x, y, 180, 180, -41,  -132]
+            }
+
+            template tmpl_low_building_3x2_east(x, y) {
+                [x, y, 180, 180, -137,  -116]
+            }
+
+            template tmpl_low_building_3x2_south_east(x, y) {
+                [x, y, 180, 180, -105,  -132]
+            }
+
+            template tmpl_low_building_3x2_south(x, y) {
+                [x, y, 180, 180, -73,  -148]
+            }
+
+        // low_building_2x3
+            template tmpl_low_building_2x3_north(x, y) {
+                [x, y, 180, 180, -73,  -100]
+            }
+
+            template tmpl_low_building_2x3_north_east(x, y) {
+                [x, y, 180, 180, -105,  -116]
+            }
+
+            template tmpl_low_building_2x3_east(x, y) {
+                [x, y, 180, 180, -137,  -132]
+            }
+
+            template tmpl_low_building_2x3_west(x, y) {
+                [x, y, 180, 180, -41,  -116]
+            }
+
+            template tmpl_low_building_2x3_south_west(x, y) {
+                [x, y, 180, 180, -73,  -132]
+            }
+
+            template tmpl_low_building_2x3_south(x, y) {
+                [x, y, 180, 180, -105,  -148]
+            }
+
+        // low_building_3x3
+            template tmpl_low_building_3x3_north(x, y) {
+                [x, y, 200, 180, -99,  -84]
+            }
+
+            template tmpl_low_building_3x3_north_east(x, y) {
+                [x, y, 200, 180, -131,  -100]
+            }
+
+            template tmpl_low_building_3x3_east(x, y) {
+                [x, y, 200, 180, -163,  -116]
+            }
+
+            template tmpl_low_building_3x3_north_west(x, y) {
+                [x, y, 200, 180, -67,  -100]
+            }
+
+            template tmpl_low_building_3x3_center(x, y) {
+                [x, y, 200, 180, -99,  -116]
+            }
+
+            template tmpl_low_building_3x3_south_east(x, y) {
+                [x, y, 200, 180, -131,  -132]
+            }
+
+            template tmpl_low_building_3x3_west(x, y) {
+                [x, y, 200, 180, -35,  -116]
+            }
+
+            template tmpl_low_building_3x3_south_west(x, y) {
+                [x, y, 200, 180, -67,  -132]
+            }
+
+            template tmpl_low_building_3x3_south(x, y) {
+                [x, y, 200, 180, -99,  -148]
+            }
 
     // mid_building
         template tmpl_mid_building(x, y) {
@@ -6954,6 +7059,408 @@
                 }
         
     // OBJECTS_LANDMARKS
+        // SEOUL_CITY_HALL
+            // Spritelayouts normal
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_N {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_N;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_N;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_N, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north (0, 0)
+                }
+
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_NE {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_NE;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_NE;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_NE, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north_east (0, 200)
+                }
+
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_E {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_E;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_E;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_E, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_east (0, 400)
+                }
+
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_NW {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_NW;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_NW;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_NW, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north_west (0, 600)
+                }
+
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_C {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_C;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_C;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_C, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_center (0, 800)
+                }
+
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_SE {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_SE;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_SE;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_SE, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south_east (0, 1000)
+                }
+
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_W {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_W;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_W;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_W, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_west (0, 1200)
+                }
+
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_SW {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_SW;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_SW;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_SW, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south_west (0, 1400)
+                }
+
+                spritelayout layout_building_normal_object_SEOUL_CITY_HALL_S {
+                    ground {
+                        sprite:                          set_object_ground_normal_SEOUL_CITY_HALL_S;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_SEOUL_CITY_HALL_S;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_normal_SEOUL_CITY_HALL_S, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south (0, 1600)
+                }
+
+            // Spritelayouts snow
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_N {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_N;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_N;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_N, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north (440, 0)
+                }
+
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_NE {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_NE;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_NE;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_NE, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north_east (440, 200)
+                }
+
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_E {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_E;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_E;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_E, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_east (440, 400)
+                }
+
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_NW {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_NW;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_NW;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_NW, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north_west (440, 600)
+                }
+
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_C {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_C;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_C;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_C, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_center (440, 800)
+                }
+
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_SE {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_SE;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_SE;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_SE, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south_east (440, 1000)
+                }
+
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_W {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_W;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_W;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_W, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_west (440, 1200)
+                }
+
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_SW {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_SW;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_SW;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_SW, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south_west (440, 1400)
+                }
+
+                spritelayout layout_building_snow_object_SEOUL_CITY_HALL_S {
+                    ground {
+                        sprite:                          set_object_ground_snow_SEOUL_CITY_HALL_S;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_SEOUL_CITY_HALL_S;
+                        zextent:                         225;
+                    }
+                }
+
+                spriteset(set_object_building_snow_SEOUL_CITY_HALL_S, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south (440, 1600)
+                }
+
+            // Ground normal
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_N, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north (220, 0)
+                }
+
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_NE, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north_east (220, 200)
+                }
+
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_E, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_east (220, 400)
+                }
+
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_NW, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north_west (220, 600)
+                }
+
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_C, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_center (220, 800)
+                }
+
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_SE, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south_east (220, 1000)
+                }
+
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_W, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_west (220, 1200)
+                }
+
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_SW, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south_west (220, 1400)
+                }
+
+                spriteset(set_object_ground_normal_SEOUL_CITY_HALL_S, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south (220, 1600)
+                }
+
+            // Ground snow
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_N, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north (660, 0)
+                }
+
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_NE, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north_east (660, 200)
+                }
+
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_E, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_east (660, 400)
+                }
+
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_NW, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_north_west (660, 600)
+                }
+
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_C, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_center (660, 800)
+                }
+
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_SE, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south_east (660, 1000)
+                }
+
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_W, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_west (660, 1200)
+                }
+
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_SW, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south_west (660, 1400)
+                }
+
+                spriteset(set_object_ground_snow_SEOUL_CITY_HALL_S, "./Korean_Town_Set_As_Objects/gfx/objects/SEOUL_CITY_HALL.png") {
+                    tmpl_low_building_3x3_south (660, 1600)
+                }
+
+            // Switch
+                switch(FEAT_OBJECTS, SELF, sw_building_normal_object_SEOUL_CITY_HALL, relative_pos) {
+                    relative_coord(0, 0):               layout_building_normal_object_SEOUL_CITY_HALL_N;
+                    relative_coord(0, 1):               layout_building_normal_object_SEOUL_CITY_HALL_NE;
+                    relative_coord(0, 2):               layout_building_normal_object_SEOUL_CITY_HALL_E;
+                    relative_coord(1, 0):               layout_building_normal_object_SEOUL_CITY_HALL_NW;
+                    relative_coord(1, 1):               layout_building_normal_object_SEOUL_CITY_HALL_C;
+                    relative_coord(1, 2):               layout_building_normal_object_SEOUL_CITY_HALL_SE;
+                    relative_coord(2, 0):               layout_building_normal_object_SEOUL_CITY_HALL_W;
+                    relative_coord(2, 1):               layout_building_normal_object_SEOUL_CITY_HALL_SW;
+                    relative_coord(2, 2):               layout_building_normal_object_SEOUL_CITY_HALL_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_snow_object_SEOUL_CITY_HALL, relative_pos) {
+                    relative_coord(0, 0):               layout_building_snow_object_SEOUL_CITY_HALL_N;
+                    relative_coord(0, 1):               layout_building_snow_object_SEOUL_CITY_HALL_NE;
+                    relative_coord(0, 2):               layout_building_snow_object_SEOUL_CITY_HALL_E;
+                    relative_coord(1, 0):               layout_building_snow_object_SEOUL_CITY_HALL_NW;
+                    relative_coord(1, 1):               layout_building_snow_object_SEOUL_CITY_HALL_C;
+                    relative_coord(1, 2):               layout_building_snow_object_SEOUL_CITY_HALL_SE;
+                    relative_coord(2, 0):               layout_building_snow_object_SEOUL_CITY_HALL_W;
+                    relative_coord(2, 1):               layout_building_snow_object_SEOUL_CITY_HALL_SW;
+                    relative_coord(2, 2):               layout_building_snow_object_SEOUL_CITY_HALL_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_object_SEOUL_CITY_HALL, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_normal_object_SEOUL_CITY_HALL;
+                    TILETYPE_SNOW:                      sw_building_snow_object_SEOUL_CITY_HALL;            
+                    sw_building_normal_object_SEOUL_CITY_HALL;
+                }
+
+            // Item Define
+                item(FEAT_OBJECTS, kt_object_SEOUL_CITY_HALL) {
+                    property {
+                        class:                          "KTOK";
+                        classname:                      string(STR_OBJECT_KTOK_NAME);
+                        name:                           string(STR_OBJECT_SEOUL_CITY_HALL_NAME);
+                        climates_available:             ALL_CLIMATES;
+                        size:                           [3,3];
+                        build_cost_multiplier:          2;
+                        remove_cost_multiplier:         2;
+                        introduction_date:              date(1926,1,1);
+                        end_of_life_date:               0xFFFFFFFF;
+                        object_flags:                   bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+                        height:                         16;
+                        num_views:                      1;
+                    }
+
+                    graphics {
+                        default:                        sw_terrain_object_SEOUL_CITY_HALL;
+                        autoslope:                      CB_RESULT_AUTOSLOPE;
+                        additional_text:                string(STR_OBJECT_SEOUL_CITY_HALL_DESC);
+                    }
+                }
+
         // 31BUILDING
             // Spritelayouts
                 spritelayout layout_building_normal_object_31BUILDING_N {
@@ -7351,6 +7858,547 @@
                         default:                        sw_terrain_object_N_SEOUL_TOWER;
                         autoslope:                      CB_RESULT_AUTOSLOPE;
                         additional_text:                string(STR_OBJECT_N_SEOUL_TOWER_DESC);
+                    }
+                }
+
+        // NATIONAL_ASSEMBLY
+            // Spritelayouts normal
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_A_north {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_A_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_A_north;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_north (0, 0)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_A_north_west {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_A_north_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_A_north_west;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_A_north_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_north_west (0, 200)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_A_west {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_A_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_A_west;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_west (0, 400)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_A_east {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_A_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_A_east;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_A_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_east (0, 600)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_A_south_east {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_A_south_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_A_south_east;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_A_south_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_south_east (0, 800)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_A_south {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_A_south;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_A_south;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_A_south, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_south (0, 1000)
+                }
+
+                // Spritelayouts normal
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_B_north {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_B_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_B_north;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_north (0, 1200)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_B_north_east {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_B_north_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_B_north_east;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_B_north_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_north_east (0, 1400)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_B_east {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_B_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_B_east;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_east (0, 1600)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_B_west {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_B_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_B_west;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_B_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_west (0, 1800)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_B_south_west {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_B_south_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_B_south_west;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_B_south_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_south_west (0, 2000)
+                }
+
+                spritelayout layout_building_normal_object_NATIONAL_ASSEMBLY_B_south {
+                    ground {
+                        sprite:                          set_ground_normal_object_NATIONAL_ASSEMBLY_B_south;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_NATIONAL_ASSEMBLY_B_south;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_normal_object_NATIONAL_ASSEMBLY_B_south, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_south (0, 2200)
+                }
+
+            // Spritelayouts snow
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_A_north {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_A_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_A_north;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_north (400, 0)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_A_north_west {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_A_north_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_A_north_west;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_A_north_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_north_west (400, 200)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_A_west {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_A_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_A_west;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_west (400, 400)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_A_east {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_A_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_A_east;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_A_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_east (400, 600)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_A_south_east {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_A_south_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_A_south_east;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_A_south_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_south_east (400, 800)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_A_south {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_A_south;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_A_south;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_A_south, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_south (400, 1000)
+                }
+
+                // Spritelayouts snow
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_B_north {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_B_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_B_north;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_north (400, 1200)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_B_north_east {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_B_north_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_B_north_east;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_B_north_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_north_east (400, 1400)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_B_east {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_B_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_B_east;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_east (400, 1600)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_B_west {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_B_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_B_west;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_B_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_west (400, 1800)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_B_south_west {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_B_south_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_B_south_west;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_B_south_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_south_west (400, 2000)
+                }
+
+                spritelayout layout_building_snow_object_NATIONAL_ASSEMBLY_B_south {
+                    ground {
+                        sprite:                          set_ground_snow_object_NATIONAL_ASSEMBLY_B_south;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_NATIONAL_ASSEMBLY_B_south;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_building_snow_object_NATIONAL_ASSEMBLY_B_south, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_south (400, 2200)
+                }
+
+            // Ground normal
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_north (200, 0)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_A_north_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_north_west (200, 200)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_west (200, 400)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_A_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_east (200, 600)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_A_south_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_south_east (200, 800)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_A_south, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_south (200, 1000)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_north (200, 1200)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_B_north_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_north_east (200, 1400)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_east (200, 1600)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_B_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_west (200, 1800)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_B_south_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_south_west (200, 2000)
+                }
+
+                spriteset(set_ground_normal_object_NATIONAL_ASSEMBLY_B_south, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_south (200, 2200)
+                }
+
+            // Ground snow
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_north (600, 0)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_A_north_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_north_west (600, 200)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_west (600, 400)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_A_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_east (600, 600)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_A_south_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_south_east (600, 800)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_A_south, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_3x2_south (600, 1000)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_north (600, 1200)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_B_north_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_north_east (600, 1400)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_east (600, 1600)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_B_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_west (600, 1800)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_B_south_west, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_south_west (600, 2000)
+                }
+
+                spriteset(set_ground_snow_object_NATIONAL_ASSEMBLY_B_south, "./Korean_Town_Set_As_Objects/gfx/objects/NATIONAL_ASSEMBLY.png") {
+                    tmpl_low_building_2x3_south (600, 2200)
+                }
+
+            // Switch
+                switch(FEAT_OBJECTS, SELF, sw_building_normal_object_NATIONAL_ASSEMBLY_A, relative_pos) {
+                    relative_coord(0, 0):               layout_building_normal_object_NATIONAL_ASSEMBLY_A_north;
+                    relative_coord(1, 0):               layout_building_normal_object_NATIONAL_ASSEMBLY_A_north_west;
+                    relative_coord(2, 0):               layout_building_normal_object_NATIONAL_ASSEMBLY_A_west;
+                    relative_coord(0, 1):               layout_building_normal_object_NATIONAL_ASSEMBLY_A_east;
+                    relative_coord(1, 1):               layout_building_normal_object_NATIONAL_ASSEMBLY_A_south_east;
+                    relative_coord(2, 1):               layout_building_normal_object_NATIONAL_ASSEMBLY_A_south;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_snow_object_NATIONAL_ASSEMBLY_A, relative_pos) {
+                    relative_coord(0, 0):               layout_building_snow_object_NATIONAL_ASSEMBLY_A_north;
+                    relative_coord(1, 0):               layout_building_snow_object_NATIONAL_ASSEMBLY_A_north_west;
+                    relative_coord(2, 0):               layout_building_snow_object_NATIONAL_ASSEMBLY_A_west;
+                    relative_coord(0, 1):               layout_building_snow_object_NATIONAL_ASSEMBLY_A_east;
+                    relative_coord(1, 1):               layout_building_snow_object_NATIONAL_ASSEMBLY_A_south_east;
+                    relative_coord(2, 1):               layout_building_snow_object_NATIONAL_ASSEMBLY_A_south;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_normal_object_NATIONAL_ASSEMBLY_B, relative_pos) {
+                    relative_coord(0, 0):               layout_building_normal_object_NATIONAL_ASSEMBLY_B_north;
+                    relative_coord(0, 1):               layout_building_normal_object_NATIONAL_ASSEMBLY_B_north_east;
+                    relative_coord(0, 2):               layout_building_normal_object_NATIONAL_ASSEMBLY_B_east;
+                    relative_coord(1, 0):               layout_building_normal_object_NATIONAL_ASSEMBLY_B_west;
+                    relative_coord(1, 1):               layout_building_normal_object_NATIONAL_ASSEMBLY_B_south_west;
+                    relative_coord(1, 2):               layout_building_normal_object_NATIONAL_ASSEMBLY_B_south;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_snow_object_NATIONAL_ASSEMBLY_B, relative_pos) {
+                    relative_coord(0, 0):               layout_building_snow_object_NATIONAL_ASSEMBLY_B_north;
+                    relative_coord(0, 1):               layout_building_snow_object_NATIONAL_ASSEMBLY_B_north_east;
+                    relative_coord(0, 2):               layout_building_snow_object_NATIONAL_ASSEMBLY_B_east;
+                    relative_coord(1, 0):               layout_building_snow_object_NATIONAL_ASSEMBLY_B_west;
+                    relative_coord(1, 1):               layout_building_snow_object_NATIONAL_ASSEMBLY_B_south_west;
+                    relative_coord(1, 2):               layout_building_snow_object_NATIONAL_ASSEMBLY_B_south;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_object_NATIONAL_ASSEMBLY_A, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_normal_object_NATIONAL_ASSEMBLY_A;
+                    TILETYPE_SNOW:                      sw_building_snow_object_NATIONAL_ASSEMBLY_A;           
+                    sw_building_normal_object_NATIONAL_ASSEMBLY_A;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_object_NATIONAL_ASSEMBLY_B, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_normal_object_NATIONAL_ASSEMBLY_B;
+                    TILETYPE_SNOW:                      sw_building_snow_object_NATIONAL_ASSEMBLY_B;           
+                    sw_building_normal_object_NATIONAL_ASSEMBLY_B;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_views_object_NATIONAL_ASSEMBLY, view) {
+                    0:                                  sw_terrain_object_NATIONAL_ASSEMBLY_A;
+                    1:                                  sw_terrain_object_NATIONAL_ASSEMBLY_B;
+                }
+
+            // Item Define
+                item(FEAT_OBJECTS, kt_object_NATIONAL_ASSEMBLY) {
+                    property {
+                        class:                          "KTOK";
+                        classname:                      string(STR_OBJECT_KTOK_NAME);
+                        name:                           string(STR_OBJECT_NATIONAL_ASSEMBLY_NAME);
+                        climates_available:             ALL_CLIMATES;
+                        size:                           [3,2];
+                        build_cost_multiplier:          2;
+                        remove_cost_multiplier:         2;
+                        introduction_date:              date(1975,1,1);
+                        end_of_life_date:               0xFFFFFFFF;
+                        object_flags:                   bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+                        height:                         32;
+                        num_views:                      2;
+                    }
+
+                    graphics {
+                        default:                        sw_views_object_NATIONAL_ASSEMBLY;
+                        autoslope:                      CB_RESULT_AUTOSLOPE;
+                        additional_text:                string(STR_OBJECT_NATIONAL_ASSEMBLY_DESC);
                     }
                 }
 
@@ -8196,5 +9244,1114 @@
                         default:                        sw_views_object_APT001;
                         autoslope:                      CB_RESULT_AUTOSLOPE;
                         additional_text:                string(STR_OBJECT_APT001_DESC);
+                    }
+                }
+
+        // APT002
+            // Spritelayouts
+                spritelayout layout_building_VIEW1_normal_object_APT002_N {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_normal_APT002_N;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_normal_APT002_N;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_normal_APT002_N, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_north (0, 0)
+                }
+
+                spritelayout layout_building_VIEW1_normal_object_APT002_E {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_normal_APT002_E;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_normal_APT002_E;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_normal_APT002_E, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (0, 200)
+                }
+
+                spritelayout layout_building_VIEW1_normal_object_APT002_W {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_normal_APT002_W;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_normal_APT002_W;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_normal_APT002_W, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_west (0, 400)
+                }
+
+                spritelayout layout_building_VIEW1_normal_object_APT002_S {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_normal_APT002_S;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_normal_APT002_S;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_normal_APT002_S, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_south (0, 600)
+                }
+
+                spritelayout layout_building_VIEW1_snow_object_APT002_N {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_snow_APT002_N;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_snow_APT002_N;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_snow_APT002_N, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_north (300, 0)
+                }
+
+                spritelayout layout_building_VIEW1_snow_object_APT002_E {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_snow_APT002_E;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_snow_APT002_E;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_snow_APT002_E, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (300, 200)
+                }
+
+                spritelayout layout_building_VIEW1_snow_object_APT002_W {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_snow_APT002_W;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_snow_APT002_W;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_snow_APT002_W, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_west (300, 400)
+                }
+
+                spritelayout layout_building_VIEW1_snow_object_APT002_S {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_snow_APT002_S;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_snow_APT002_S;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_snow_APT002_S, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_south (300, 600)
+                }
+
+                // Spritelayouts
+                spritelayout layout_building_VIEW1_normal_object_APT002_N2 {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_normal_APT002_N;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_normal_APT002_N2;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_normal_APT002_N2, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_north (600, 400)
+                }
+
+                spritelayout layout_building_VIEW1_snow_object_APT002_N2 {
+                    ground {
+                        sprite:                          set_object_VIEW1_ground_snow_APT002_N;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW1_building_snow_APT002_N2;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW1_building_snow_APT002_N2, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_north (900, 400)
+                }
+
+                spritelayout layout_building_VIEW2_normal_object_APT002_N {
+                    ground {
+                        sprite:                          set_object_VIEW2_ground_normal_APT002_N;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW2_building_normal_APT002_N;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW2_building_normal_APT002_N, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (600, 0)
+                }
+
+                spritelayout layout_building_VIEW2_snow_object_APT002_N {
+                    ground {
+                        sprite:                          set_object_VIEW2_ground_snow_APT002_N;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW2_building_snow_APT002_N;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW2_building_snow_APT002_N, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (900, 0)
+                }
+
+                spritelayout layout_building_VIEW3_normal_object_APT002_E {
+                    ground {
+                        sprite:                          set_object_VIEW3_ground_normal_APT002_E;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW3_building_normal_APT002_E;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW3_building_normal_APT002_E, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (600, 200)
+                }
+
+                spritelayout layout_building_VIEW3_snow_object_APT002_E {
+                    ground {
+                        sprite:                          set_object_VIEW3_ground_snow_APT002_E;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW3_building_snow_APT002_E;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW3_building_snow_APT002_E, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (900, 200)
+                }
+
+                spritelayout layout_building_VIEW4_normal_object_APT002_S {
+                    ground {
+                        sprite:                          set_object_VIEW4_ground_normal_APT002_S;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW4_building_normal_APT002_S;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW4_building_normal_APT002_S, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (600, 600)
+                }
+
+                spritelayout layout_building_VIEW4_snow_object_APT002_S {
+                    ground {
+                        sprite:                          set_object_VIEW4_ground_snow_APT002_S;
+                    }
+
+                    building {
+                        sprite:                          set_object_VIEW4_building_snow_APT002_S;
+                        zextent:                         64;
+                    }
+                }
+
+                spriteset(set_object_VIEW4_building_snow_APT002_S, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (900, 600)
+                }
+
+            // Ground
+                spriteset(set_object_VIEW1_ground_normal_APT002_N, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_north (150, 0)
+                }
+
+                spriteset(set_object_VIEW1_ground_normal_APT002_E, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (150, 200)
+                }
+
+                spriteset(set_object_VIEW1_ground_normal_APT002_W, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_west (150, 400)
+                }
+
+                spriteset(set_object_VIEW1_ground_normal_APT002_S, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_south (150, 600)
+                }
+
+                spriteset(set_object_VIEW1_ground_snow_APT002_N, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_north (450, 0)
+                }
+
+                spriteset(set_object_VIEW1_ground_snow_APT002_E, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (450, 200)
+                }
+
+                spriteset(set_object_VIEW1_ground_snow_APT002_W, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_west (450, 400)
+                }
+
+                spriteset(set_object_VIEW1_ground_snow_APT002_S, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_south (450, 600)
+                }
+
+                spriteset(set_object_VIEW2_ground_normal_APT002_N, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_north (750, 0)
+                }
+
+                spriteset(set_object_VIEW2_ground_snow_APT002_N, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_north (1050, 0)
+                }
+
+                spriteset(set_object_VIEW3_ground_normal_APT002_E, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (750, 200)
+                }
+
+                spriteset(set_object_VIEW3_ground_snow_APT002_E, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (1050, 200)
+                }
+
+                spriteset(set_object_VIEW4_ground_normal_APT002_S, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (750, 600)
+                }
+
+                spriteset(set_object_VIEW4_ground_snow_APT002_S, "./Korean_Town_Set_As_Objects/gfx/objects/APT002.png") {
+                    tmpl_mid_building_2X2_east (1050, 600)
+                }
+
+            // Switch
+                switch(FEAT_OBJECTS, SELF, sw_building_VIEW1_normal_object_APT002, relative_pos) {
+                    relative_coord(0, 0):               layout_building_VIEW1_normal_object_APT002_N;
+                    relative_coord(0, 1):               layout_building_VIEW1_normal_object_APT002_E;
+                    relative_coord(1, 0):               layout_building_VIEW1_normal_object_APT002_W;
+                    relative_coord(1, 1):               layout_building_VIEW1_normal_object_APT002_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_VIEW1_snow_object_APT002, relative_pos) {
+                    relative_coord(0, 0):               layout_building_VIEW1_snow_object_APT002_N;
+                    relative_coord(0, 1):               layout_building_VIEW1_snow_object_APT002_E;
+                    relative_coord(1, 0):               layout_building_VIEW1_snow_object_APT002_W;
+                    relative_coord(1, 1):               layout_building_VIEW1_snow_object_APT002_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_VIEW2_normal_object_APT002, relative_pos) {
+                    relative_coord(0, 0):               layout_building_VIEW1_normal_object_APT002_N;
+                    relative_coord(0, 1):               layout_building_VIEW3_normal_object_APT002_E;
+                    relative_coord(1, 0):               layout_building_VIEW1_normal_object_APT002_W;
+                    relative_coord(1, 1):               layout_building_VIEW1_normal_object_APT002_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_VIEW2_snow_object_APT002, relative_pos) {
+                    relative_coord(0, 0):               layout_building_VIEW1_snow_object_APT002_N;
+                    relative_coord(0, 1):               layout_building_VIEW3_snow_object_APT002_E;
+                    relative_coord(1, 0):               layout_building_VIEW1_snow_object_APT002_W;
+                    relative_coord(1, 1):               layout_building_VIEW1_snow_object_APT002_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_VIEW3_normal_object_APT002, relative_pos) {
+                    relative_coord(0, 0):               layout_building_VIEW2_normal_object_APT002_N;
+                    relative_coord(0, 1):               layout_building_VIEW1_normal_object_APT002_E;
+                    relative_coord(1, 0):               layout_building_VIEW1_normal_object_APT002_W;
+                    relative_coord(1, 1):               layout_building_VIEW1_normal_object_APT002_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_VIEW3_snow_object_APT002, relative_pos) {
+                    relative_coord(0, 0):               layout_building_VIEW2_snow_object_APT002_N;
+                    relative_coord(0, 1):               layout_building_VIEW1_snow_object_APT002_E;
+                    relative_coord(1, 0):               layout_building_VIEW1_snow_object_APT002_W;
+                    relative_coord(1, 1):               layout_building_VIEW1_snow_object_APT002_S;
+                }
+                switch(FEAT_OBJECTS, SELF, sw_building_VIEW4_normal_object_APT002, relative_pos) {
+                    relative_coord(0, 0):               layout_building_VIEW1_normal_object_APT002_N2;
+                    relative_coord(0, 1):               layout_building_VIEW1_normal_object_APT002_E;
+                    relative_coord(1, 0):               layout_building_VIEW1_normal_object_APT002_W;
+                    relative_coord(1, 1):               layout_building_VIEW4_normal_object_APT002_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_VIEW4_snow_object_APT002, relative_pos) {
+                    relative_coord(0, 0):               layout_building_VIEW1_snow_object_APT002_N2;
+                    relative_coord(0, 1):               layout_building_VIEW1_snow_object_APT002_E;
+                    relative_coord(1, 0):               layout_building_VIEW1_snow_object_APT002_W;
+                    relative_coord(1, 1):               layout_building_VIEW4_snow_object_APT002_S;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_VIEW1_object_APT002, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_VIEW1_normal_object_APT002;
+                    TILETYPE_SNOW:                      sw_building_VIEW1_snow_object_APT002;            
+                    sw_building_VIEW1_normal_object_APT002;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_VIEW2_object_APT002, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_VIEW2_normal_object_APT002;
+                    TILETYPE_SNOW:                      sw_building_VIEW2_snow_object_APT002;            
+                    sw_building_VIEW2_normal_object_APT002;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_VIEW3_object_APT002, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_VIEW3_normal_object_APT002;
+                    TILETYPE_SNOW:                      sw_building_VIEW3_snow_object_APT002;            
+                    sw_building_VIEW3_normal_object_APT002;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_VIEW4_object_APT002, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_VIEW4_normal_object_APT002;
+                    TILETYPE_SNOW:                      sw_building_VIEW4_snow_object_APT002;            
+                    sw_building_VIEW4_normal_object_APT002;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_views_object_APT002, view) {
+                    0:                                  sw_terrain_VIEW1_object_APT002;
+                    1:                                  sw_terrain_VIEW2_object_APT002;
+                    2:                                  sw_terrain_VIEW3_object_APT002;
+                    3:                                  sw_terrain_VIEW4_object_APT002;
+                }
+
+            // Item Define
+                item(FEAT_OBJECTS, kt_object_APT002) {
+                    property {
+                        class:                          "KTOA";
+                        classname:                      string(STR_OBJECT_KTOA_NAME);
+                        name:                           string(STR_OBJECT_APT001_NAME);
+                        climates_available:             ALL_CLIMATES;
+                        size:                           [2,2];
+                        build_cost_multiplier:          2;
+                        remove_cost_multiplier:         2;
+                        introduction_date:              date(1985,1,1);
+                        end_of_life_date:               0xFFFFFFFF;
+                        object_flags:                   bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+                        height:                         16;
+                        num_views:                      4;
+                    }
+
+                    graphics {
+                        default:                        sw_views_object_APT002;
+                        autoslope:                      CB_RESULT_AUTOSLOPE;
+                        additional_text:                string(STR_OBJECT_APT001_DESC);
+                    }
+                }
+
+    // OBJECTS_E.T.C.
+        // PARKING_LOT
+            // Spritelayouts
+                spritelayout layout_building_normal_object_PARKING_LOT_right_empty {
+                    ground {
+                        sprite:                          set_object_ground_normal_PARKING_LOT_right;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_PARKING_LOT_right_empty;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_normal_PARKING_LOT_right_empty, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_empty (0, 0)
+                }
+
+                spritelayout layout_building_normal_object_PARKING_LOT_right_A {
+                    ground {
+                        sprite:                          set_object_ground_normal_PARKING_LOT_right;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_PARKING_LOT_right_A;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_normal_PARKING_LOT_right_A, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (80, 0)
+                }
+
+                spritelayout layout_building_normal_object_PARKING_LOT_right_B {
+                    ground {
+                        sprite:                          set_object_ground_normal_PARKING_LOT_right;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_PARKING_LOT_right_B;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_normal_PARKING_LOT_right_B, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (160, 0)
+                }
+
+                spritelayout layout_building_snow_object_PARKING_LOT_right_empty {
+                    ground {
+                        sprite:                          set_object_ground_snow_PARKING_LOT_right;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_PARKING_LOT_right_empty;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_snow_PARKING_LOT_right_empty, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_empty (240, 0)
+                }
+
+                spritelayout layout_building_snow_object_PARKING_LOT_right_A {
+                    ground {
+                        sprite:                          set_object_ground_snow_PARKING_LOT_right;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_PARKING_LOT_right_A;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_snow_PARKING_LOT_right_A, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (320, 0)
+                }
+
+                spritelayout layout_building_snow_object_PARKING_LOT_right_B {
+                    ground {
+                        sprite:                          set_object_ground_snow_PARKING_LOT_right;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_PARKING_LOT_right_B;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_snow_PARKING_LOT_right_B, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (400, 0)
+                }
+
+                spritelayout layout_building_normal_object_PARKING_LOT_left_empty {
+                    ground {
+                        sprite:                          set_object_ground_normal_PARKING_LOT_left;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_PARKING_LOT_left_empty;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_normal_PARKING_LOT_left_empty, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_empty (0, 100)
+                }
+
+                spritelayout layout_building_normal_object_PARKING_LOT_left_A {
+                    ground {
+                        sprite:                          set_object_ground_normal_PARKING_LOT_left;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_PARKING_LOT_left_A;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_normal_PARKING_LOT_left_A, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (80, 100)
+                }
+
+                spritelayout layout_building_normal_object_PARKING_LOT_left_B {
+                    ground {
+                        sprite:                          set_object_ground_normal_PARKING_LOT_left;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_normal_PARKING_LOT_left_B;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_normal_PARKING_LOT_left_B, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (160, 100)
+                }
+
+                spritelayout layout_building_snow_object_PARKING_LOT_left_empty {
+                    ground {
+                        sprite:                          set_object_ground_snow_PARKING_LOT_left;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_PARKING_LOT_left_empty;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_snow_PARKING_LOT_left_empty, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_empty (240, 100)
+                }
+
+                spritelayout layout_building_snow_object_PARKING_LOT_left_A {
+                    ground {
+                        sprite:                          set_object_ground_snow_PARKING_LOT_left;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_PARKING_LOT_left_A;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_snow_PARKING_LOT_left_A, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (320, 100)
+                }
+
+                spritelayout layout_building_snow_object_PARKING_LOT_left_B {
+                    ground {
+                        sprite:                          set_object_ground_snow_PARKING_LOT_left;
+                    }
+
+                    building {
+                        sprite:                          set_object_building_snow_PARKING_LOT_left_B;
+                        zextent:                         32;
+                    }
+                }
+
+                spriteset(set_object_building_snow_PARKING_LOT_left_B, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (400, 100)
+                }
+
+            // Ground
+                spriteset(set_object_ground_normal_PARKING_LOT_right, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (0, 0)
+                }
+
+                spriteset(set_object_ground_normal_PARKING_LOT_left, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (0, 100)
+                }
+              
+                spriteset(set_object_ground_snow_PARKING_LOT_right, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (240, 0)
+                }
+
+                spriteset(set_object_ground_snow_PARKING_LOT_left, "./Korean_Town_Set_As_Objects/gfx/objects/PARKING_LOT.png") {
+                    tmpl_low_building (240, 100)
+                }
+
+            // Switch
+                switch(FEAT_OBJECTS, SELF, random_building_normal_object_PARKING_LOT_right, random_bits % 5) {
+                    1..2: layout_building_normal_object_PARKING_LOT_right_A;
+                    3..4: layout_building_normal_object_PARKING_LOT_right_B;
+                    layout_building_normal_object_PARKING_LOT_right_empty;
+                }
+
+                switch(FEAT_OBJECTS, SELF, random_building_snow_object_PARKING_LOT_right, random_bits % 5) {
+                    1..2: layout_building_snow_object_PARKING_LOT_right_A;
+                    3..4: layout_building_snow_object_PARKING_LOT_right_B;
+                    layout_building_snow_object_PARKING_LOT_right_empty;
+                }
+
+                switch(FEAT_OBJECTS, SELF, random_building_normal_object_PARKING_LOT_left, random_bits % 5) {
+                    1..2: layout_building_normal_object_PARKING_LOT_left_A;
+                    3..4: layout_building_normal_object_PARKING_LOT_left_B;
+                    layout_building_normal_object_PARKING_LOT_left_empty;
+                }
+
+                switch(FEAT_OBJECTS, SELF, random_building_snow_object_PARKING_LOT_left, random_bits % 5) {
+                    1..2: layout_building_snow_object_PARKING_LOT_left_A;
+                    3..4: layout_building_snow_object_PARKING_LOT_left_B;
+                    layout_building_snow_object_PARKING_LOT_left_empty;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_climate_object_PARKING_LOT_right, terrain_type) {
+                    TILETYPE_NORMAL:                    random_building_normal_object_PARKING_LOT_right;
+                    TILETYPE_SNOW:                      random_building_snow_object_PARKING_LOT_right;            
+                    random_building_normal_object_PARKING_LOT_right;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_climate_object_PARKING_LOT_left, terrain_type) {
+                    TILETYPE_NORMAL:                    random_building_normal_object_PARKING_LOT_left;
+                    TILETYPE_SNOW:                      random_building_snow_object_PARKING_LOT_left;            
+                    random_building_normal_object_PARKING_LOT_left;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_views_object_PARKING_LOT, view) {
+                    0: sw_climate_object_PARKING_LOT_right;
+                    1: sw_climate_object_PARKING_LOT_left;      
+                }
+
+            // Item Define
+                item(FEAT_OBJECTS, kt_object_PARKING_LOT) {
+                    property {
+                        class:                           "KTOE";
+                        classname:                       string(STR_OBJECT_KTOE_NAME);
+                        name:                            string(STR_OBJECT_PARKING_LOT_NAME);
+                        climates_available:              ALL_CLIMATES;
+                        size:                            [1,1];
+                        build_cost_multiplier:           1;
+                        remove_cost_multiplier:          1;
+                        introduction_date:               date(1,1,1);
+                        end_of_life_date:                0xFFFFFFFF;
+                        object_flags:                    bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+                        height:                          8;
+                        num_views:                       2;
+                    }
+
+                    graphics {
+                        default:                         sw_views_object_PARKING_LOT;
+                        tile_check:                      CB_RESULT_LOCATION_ALLOW;
+                    }
+                }        
+
+        // TENNIS_COURT
+            // Spritelayouts
+                spritelayout layout_building_normal_object_TENNIS_COURT_A_north {
+                    ground {
+                        sprite:                          set_ground_normal_object_TENNIS_COURT_A_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_TENNIS_COURT_A_north;
+                        zextent:                         16;
+                    }
+                }
+
+                spriteset(set_building_normal_object_TENNIS_COURT_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_2x1_north (0, 240)
+                }
+
+                spritelayout layout_building_normal_object_TENNIS_COURT_A_west {
+                    ground {
+                        sprite:                          set_ground_normal_object_TENNIS_COURT_A_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_TENNIS_COURT_A_west;
+                        zextent:                         16;
+                    }
+                }
+
+                spriteset(set_building_normal_object_TENNIS_COURT_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_2x1_west (0, 360)
+                }
+
+                spritelayout layout_building_normal_object_TENNIS_COURT_B_north {
+                    ground {
+                        sprite:                          set_ground_normal_object_TENNIS_COURT_B_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_TENNIS_COURT_B_north;
+                        zextent:                         16;
+                    }
+                }
+
+                spriteset(set_building_normal_object_TENNIS_COURT_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_1x2_north (120, 240)
+                }
+
+                spritelayout layout_building_normal_object_TENNIS_COURT_B_east {
+                    ground {
+                        sprite:                          set_ground_normal_object_TENNIS_COURT_B_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_TENNIS_COURT_B_east;
+                        zextent:                         16;
+                    }
+                }
+
+                spriteset(set_building_normal_object_TENNIS_COURT_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_1x2_east (120, 360)
+                }
+
+                spritelayout layout_building_snow_object_TENNIS_COURT_A_north {
+                    ground {
+                        sprite:                          set_ground_snow_object_TENNIS_COURT_A_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_TENNIS_COURT_A_north;
+                        zextent:                         16;
+                    }
+                }
+
+                spriteset(set_building_snow_object_TENNIS_COURT_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_2x1_north (240, 240)
+                }
+
+                spritelayout layout_building_snow_object_TENNIS_COURT_A_west {
+                    ground {
+                        sprite:                          set_ground_snow_object_TENNIS_COURT_A_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_TENNIS_COURT_A_west;
+                        zextent:                         16;
+                    }
+                }
+
+                spriteset(set_building_snow_object_TENNIS_COURT_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_2x1_west (240, 360)
+                }
+
+                spritelayout layout_building_snow_object_TENNIS_COURT_B_north {
+                    ground {
+                        sprite:                          set_ground_snow_object_TENNIS_COURT_B_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_TENNIS_COURT_B_north;
+                        zextent:                         16;
+                    }
+                }
+
+                spriteset(set_building_snow_object_TENNIS_COURT_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_1x2_north (360, 240)
+                }
+
+                spritelayout layout_building_snow_object_TENNIS_COURT_B_east {
+                    ground {
+                        sprite:                          set_ground_snow_object_TENNIS_COURT_B_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_TENNIS_COURT_B_east;
+                        zextent:                         16;
+                    }
+                }
+
+                spriteset(set_building_snow_object_TENNIS_COURT_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_1x2_east (360, 360)
+                }
+
+            // Ground
+                spriteset(set_ground_normal_object_TENNIS_COURT_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_2x1_north (0, 0)
+                }
+
+                spriteset(set_ground_normal_object_TENNIS_COURT_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_2x1_west (0, 120)
+                }
+
+                spriteset(set_ground_normal_object_TENNIS_COURT_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_1x2_north (120, 0)
+                }
+
+                spriteset(set_ground_normal_object_TENNIS_COURT_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_1x2_east (120, 120)
+                }
+
+                spriteset(set_ground_snow_object_TENNIS_COURT_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_2x1_north (240, 0)
+                }
+
+                spriteset(set_ground_snow_object_TENNIS_COURT_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_2x1_west (240, 120)
+                }
+
+                spriteset(set_ground_snow_object_TENNIS_COURT_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_1x2_north (360, 0)
+                }
+
+                spriteset(set_ground_snow_object_TENNIS_COURT_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/TENNIS_COURT.png") {
+                    tmpl_low_building_1x2_east (360, 120)
+                }
+
+            // Switch
+                switch(FEAT_OBJECTS, SELF, sw_building_normal_object_TENNIS_COURT_A, relative_pos) {
+                    relative_coord(0, 0):               layout_building_normal_object_TENNIS_COURT_A_north;
+                    relative_coord(1, 0):               layout_building_normal_object_TENNIS_COURT_A_west;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_snow_object_TENNIS_COURT_A, relative_pos) {
+                    relative_coord(0, 0):               layout_building_snow_object_TENNIS_COURT_A_north;
+                    relative_coord(1, 0):               layout_building_snow_object_TENNIS_COURT_A_west;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_normal_object_TENNIS_COURT_B, relative_pos) {
+                    relative_coord(0, 0):               layout_building_normal_object_TENNIS_COURT_B_north;
+                    relative_coord(0, 1):               layout_building_normal_object_TENNIS_COURT_B_east;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_snow_object_TENNIS_COURT_B, relative_pos) {
+                    relative_coord(0, 0):               layout_building_snow_object_TENNIS_COURT_B_north;
+                    relative_coord(0, 1):               layout_building_snow_object_TENNIS_COURT_B_east;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_object_TENNIS_COURT_A, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_normal_object_TENNIS_COURT_A;
+                    TILETYPE_SNOW:                      sw_building_snow_object_TENNIS_COURT_A;            
+                    sw_building_normal_object_TENNIS_COURT_A;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_object_TENNIS_COURT_B, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_normal_object_TENNIS_COURT_B;
+                    TILETYPE_SNOW:                      sw_building_snow_object_TENNIS_COURT_B;            
+                    sw_building_normal_object_TENNIS_COURT_B;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_views_object_TENNIS_COURT, view) {
+                    0:                                  sw_terrain_object_TENNIS_COURT_A;
+                    1:                                  sw_terrain_object_TENNIS_COURT_B;
+                }
+
+            // Item Define
+                item(FEAT_OBJECTS, kt_object_TENNIS_COURT) {
+                    property {
+                        class:                          "KTOE";
+                        classname:                      string(STR_OBJECT_KTOE_NAME);
+                        name:                           string(STR_OBJECT_TENNIS_COURT_NAME);
+                        climates_available:             ALL_CLIMATES;
+                        size:                           [2,1];
+                        build_cost_multiplier:          1;
+                        remove_cost_multiplier:         1;
+                        introduction_date:              date(1,1,1);
+                        end_of_life_date:               0xFFFFFFFF;
+                        object_flags:                   bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+                        height:                         4;
+                        num_views:                      2;
+                    }
+
+                    graphics {
+                        default:                        sw_views_object_TENNIS_COURT;
+                        autoslope:                      CB_RESULT_AUTOSLOPE;
+                    }
+                }
+
+        // GU_OFFICE
+            // Spritelayouts
+                spritelayout layout_building_normal_object_GU_OFFICE_A_north {
+                    ground {
+                        sprite:                          set_ground_normal_object_GU_OFFICE_A_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_GU_OFFICE_A_north;
+                        zextent:                         128;
+                    }
+                }
+
+                spriteset(set_building_normal_object_GU_OFFICE_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_2x1_north (0, 0)
+                }
+
+                spritelayout layout_building_normal_object_GU_OFFICE_A_west {
+                    ground {
+                        sprite:                          set_ground_normal_object_GU_OFFICE_A_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_GU_OFFICE_A_west;
+                        zextent:                         128;
+                    }
+                }
+
+                spriteset(set_building_normal_object_GU_OFFICE_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_2x1_west (0, 120)
+                }
+
+                spritelayout layout_building_normal_object_GU_OFFICE_B_north {
+                    ground {
+                        sprite:                          set_ground_normal_object_GU_OFFICE_B_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_GU_OFFICE_B_north;
+                        zextent:                         128;
+                    }
+                }
+
+                spriteset(set_building_normal_object_GU_OFFICE_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_1x2_north (120, 0)
+                }
+
+                spritelayout layout_building_normal_object_GU_OFFICE_B_east {
+                    ground {
+                        sprite:                          set_ground_normal_object_GU_OFFICE_B_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_normal_object_GU_OFFICE_B_east;
+                        zextent:                         128;
+                    }
+                }
+
+                spriteset(set_building_normal_object_GU_OFFICE_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_1x2_east (120, 120)
+                }
+
+                spritelayout layout_building_snow_object_GU_OFFICE_A_north {
+                    ground {
+                        sprite:                          set_ground_snow_object_GU_OFFICE_A_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_GU_OFFICE_A_north;
+                        zextent:                         128;
+                    }
+                }
+
+                spriteset(set_building_snow_object_GU_OFFICE_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_2x1_north (240, 0)
+                }
+
+                spritelayout layout_building_snow_object_GU_OFFICE_A_west {
+                    ground {
+                        sprite:                          set_ground_snow_object_GU_OFFICE_A_west;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_GU_OFFICE_A_west;
+                        zextent:                         128;
+                    }
+                }
+
+                spriteset(set_building_snow_object_GU_OFFICE_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_2x1_west (240, 120)
+                }
+
+                spritelayout layout_building_snow_object_GU_OFFICE_B_north {
+                    ground {
+                        sprite:                          set_ground_snow_object_GU_OFFICE_B_north;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_GU_OFFICE_B_north;
+                        zextent:                         128;
+                    }
+                }
+
+                spriteset(set_building_snow_object_GU_OFFICE_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_1x2_north (360, 0)
+                }
+
+                spritelayout layout_building_snow_object_GU_OFFICE_B_east {
+                    ground {
+                        sprite:                          set_ground_snow_object_GU_OFFICE_B_east;
+                    }
+
+                    building {
+                        sprite:                          set_building_snow_object_GU_OFFICE_B_east;
+                        zextent:                         128;
+                    }
+                }
+
+                spriteset(set_building_snow_object_GU_OFFICE_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_1x2_east (360, 120)
+                }
+
+            // Ground
+                spriteset(set_ground_normal_object_GU_OFFICE_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_2x1_north (0, 240)
+                }
+
+                spriteset(set_ground_normal_object_GU_OFFICE_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_2x1_west (0, 360)
+                }
+
+                spriteset(set_ground_normal_object_GU_OFFICE_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_1x2_north (120, 240)
+                }
+
+                spriteset(set_ground_normal_object_GU_OFFICE_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_1x2_east (120, 360)
+                }
+
+                spriteset(set_ground_snow_object_GU_OFFICE_A_north, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_2x1_north (240, 240)
+                }
+
+                spriteset(set_ground_snow_object_GU_OFFICE_A_west, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_2x1_west (240, 360)
+                }
+
+                spriteset(set_ground_snow_object_GU_OFFICE_B_north, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_1x2_north (360, 240)
+                }
+
+                spriteset(set_ground_snow_object_GU_OFFICE_B_east, "./Korean_Town_Set_As_Objects/gfx/objects/GU_OFFICE.png") {
+                    tmpl_low_building_1x2_east (360, 360)
+                }
+
+            // Switch
+                switch(FEAT_OBJECTS, SELF, sw_building_normal_object_GU_OFFICE_A, relative_pos) {
+                    relative_coord(0, 0):               layout_building_normal_object_GU_OFFICE_A_north;
+                    relative_coord(1, 0):               layout_building_normal_object_GU_OFFICE_A_west;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_snow_object_GU_OFFICE_A, relative_pos) {
+                    relative_coord(0, 0):               layout_building_snow_object_GU_OFFICE_A_north;
+                    relative_coord(1, 0):               layout_building_snow_object_GU_OFFICE_A_west;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_normal_object_GU_OFFICE_B, relative_pos) {
+                    relative_coord(0, 0):               layout_building_normal_object_GU_OFFICE_B_north;
+                    relative_coord(0, 1):               layout_building_normal_object_GU_OFFICE_B_east;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_building_snow_object_GU_OFFICE_B, relative_pos) {
+                    relative_coord(0, 0):               layout_building_snow_object_GU_OFFICE_B_north;
+                    relative_coord(0, 1):               layout_building_snow_object_GU_OFFICE_B_east;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_object_GU_OFFICE_A, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_normal_object_GU_OFFICE_A;
+                    TILETYPE_SNOW:                      sw_building_snow_object_GU_OFFICE_A;            
+                    sw_building_normal_object_GU_OFFICE_A;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_terrain_object_GU_OFFICE_B, terrain_type) {
+                    TILETYPE_NORMAL:                    sw_building_normal_object_GU_OFFICE_B;
+                    TILETYPE_SNOW:                      sw_building_snow_object_GU_OFFICE_B;            
+                    sw_building_normal_object_GU_OFFICE_B;
+                }
+
+                switch(FEAT_OBJECTS, SELF, sw_views_object_GU_OFFICE, view) {
+                    0:                                  sw_terrain_object_GU_OFFICE_A;
+                    1:                                  sw_terrain_object_GU_OFFICE_B;
+                }
+
+            // Item Define
+                item(FEAT_OBJECTS, kt_object_GU_OFFICE) {
+                    property {
+                        class:                          "KTOE";
+                        classname:                      string(STR_OBJECT_KTOE_NAME);
+                        name:                           string(STR_OBJECT_GU_OFFICE_NAME);
+                        climates_available:             ALL_CLIMATES;
+                        size:                           [2,1];
+                        build_cost_multiplier:          2;
+                        remove_cost_multiplier:         2;
+                        introduction_date:              date(1980,1,1);
+                        end_of_life_date:               0xFFFFFFFF;
+                        object_flags:                   bitmask(OBJ_FLAG_ANYTHING_REMOVE);
+                        height:                         8;
+                        num_views:                      2;
+                    }
+
+                    graphics {
+                        default:                        sw_views_object_GU_OFFICE;
+                        autoslope:                      CB_RESULT_AUTOSLOPE;
+                        additional_text:                string(STR_OBJECT_GU_OFFICE_DESC);
                     }
                 }

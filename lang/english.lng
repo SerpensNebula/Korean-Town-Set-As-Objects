@@ -1,7 +1,7 @@
 ##grflangid 0x01
 
 # GRF name and description
-STR_GRF_NAME                                      	:Korean Town Set As Objects 1.1.0
+STR_GRF_NAME                                      	:Korean Town Set As Objects 1.2.0
 STR_GRF_DESC                                      	:Korean Town Set As Objects adds object version of town houses of Korean Town Set AND more unique landmarks of South Korea. {}{}{BLACK}License: {SILVER}GNU GPL v3
 
 STR_GRF_URL                                       	:https://github.com/SerpensNebula/Korean-Town-Set-As-Objects
@@ -9,7 +9,7 @@ STR_GRF_URL                                       	:https://github.com/SerpensNe
 # Menu name
 STR_OBJECT_MENU_NAME								:　
 
-STR_OBJECT_KOMH_NAME								:Korean Town Set As Objects - Town Houses
+STR_OBJECT_KOMH_NAME								:Korean Town Set Town Houses
 STR_OBJECT_KOKT_NAME                                :    Korean Traditional Houses
 STR_OBJECT_KOSH_NAME								:    Single Houses
 STR_OBJECT_KTOV_NAME								:    Villas
@@ -21,7 +21,7 @@ STR_OBJECT_KOLF_NAME								:    Skyscrapers
 STR_OBJECT_KTOP_NAME								:    Parks
 STR_OBJECT_KOPB_NAME                                :    Public Buildings
 
-STR_OBJECT_KOAP_NAME								:Korean Town Set As Objects - Apartments
+STR_OBJECT_KOAP_NAME								:Korean Town Set Apartments
 STR_OBJECT_KOLA_NAME								:    Low-rise apartments
 STR_OBJECT_KOMA_NAME								:    High-rise apartments
 STR_OBJECT_KOTA_NAME								:    High-rise apartment Complexes
@@ -30,6 +30,7 @@ STR_OBJECT_KOMO_NAME								:Korean Town Set As Objects
 STR_OBJECT_KTOO_NAME								:    Offices
 STR_OBJECT_KTOK_NAME								:    Landmarks
 STR_OBJECT_KTOA_NAME								:    Apartments
+STR_OBJECT_KTOE_NAME                                :    e.t.c.
 
 # Building name
 STR_OBJECT_THATCHED_ROOF_HOUSE_NAME                 :Chogajip (thatched-roof Hanok)
@@ -70,12 +71,16 @@ STR_OBJECT_TALL_APT_2000_NAME						:High-rise apartment Complexes - 2000
 STR_OBJECT_TALL_APT_2015_NAME						:High-rise apartment Complexes - 2015
 
 # Object name
+STR_OBJECT_SEOUL_CITY_HALL_NAME                     :Seoul City Hall
+STR_OBJECT_SEOUL_CITY_HALL_DESC                     :Completed: 1926, Opened as Seoul City Hall: 1949
 STR_OBJECT_31BUILDING_NAME							:31 Building
 STR_OBJECT_31BUILDING_DESC							:Completed: 1970
 STR_OBJECT_HQ_512_NAME								:KORAIL Seoul Headquaters
 STR_OBJECT_HQ_512_DESC								:Completed: 1975
 STR_OBJECT_N_SEOUL_TOWER_NAME						:N Seoul Tower
 STR_OBJECT_N_SEOUL_TOWER_DESC						:Completed: 1975
+STR_OBJECT_NATIONAL_ASSEMBLY_DESC                   :The National Assembly Building of South Korea
+STR_OBJECT_NATIONAL_ASSEMBLY_NAME                   :Completed: 1975
 STR_OBJECT_63BUILDING_NAME							:63 Building
 STR_OBJECT_63BUILDING_DESC							:Completed: 1985
 STR_OBJECT_GANGNAM_TRADE_TOWER_NAME					:Trade Tower, WTC Seoul
@@ -86,3 +91,8 @@ STR_OBJECT_LOTTE_WORLD_TOWER_PART2_NAME				:Lotte World Tower (Part 2)
 
 STR_OBJECT_APT001_NAME								:Seongsan-Siyeong Apt, Mapo-gu
 STR_OBJECT_APT001_DESC								:Completed: 1986
+
+STR_OBJECT_PARKING_LOT_NAME                         :Parking Lot
+STR_OBJECT_TENNIS_COURT_NAME                        :Tennis Court
+STR_OBJECT_GU_OFFICE_NAME                           :Gu Office (District Office)
+STR_OBJECT_GU_OFFICE_DESC                           :Korean Object Set
