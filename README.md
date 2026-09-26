@@ -1,4 +1,4 @@
-# Korean-Town-Set-As-Objects 1.2.0
+# Korean-Town-Set-As-Objects 1.2.1
 
 한국도시세트 오브젝트의 홈페이지입니다. 
 This is main page of OpenTTD NewGRF 'Korean Town Set As Objects'.
